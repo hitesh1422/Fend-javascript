@@ -47,3 +47,4 @@ console.log(mynumber)
 
 //const mynumber = 90 // re-declare
 //console.log(mynumber)
+
