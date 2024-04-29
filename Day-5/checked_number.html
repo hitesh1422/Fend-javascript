@@ -6,15 +6,21 @@
 <title> Odd / Even</title>
 </head>
 <body>
-<input>
-<button onclick="checknumber()"> </button>
+<input id="number" type="number" placeholder="Enter Number eg.3">
+<button onclick="checknumber()">Submit </button>
 
 <script>
     function checknumber(){
-        alert("function called");
+        //alert("function called");
+        //console.log(document.getElementById("number").value);
+       const number = document.getElementById("number").value;
+       if(number===undefined){
+       alert("Please type the number")
+      }else if(number%2 ===0){
+      alert('Number ${number} is even')
+      }else{
+      alert('number ${number} is odd')}
     }
 </script>
 </body>
-
-
 </html>
